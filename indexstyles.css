@@ -1,0 +1,213 @@
+/*#db1414*/
+:root {
+    --flame-whisper: #fff1f1;
+    /* tono más claro, casi rosado */
+    --ember-glow: #ffe0e0;
+    /* brillo suave de brasas */
+    --blush-flare: #ffc6c6;
+    /* tono cálido y dulce */
+    --rose-heat: #ff9e9e;
+    /* rojo rosado encendido */
+    --lava-surge: #ff6767;
+    /* lava viva, muy brillante */
+    --phoenix-core: #fc3737;
+    /* el rojo puro de la llama */
+    --inferno-heart: #db1414;
+    /* rojo fuerte, el centro del fuego */
+    --crimson-spirit: #c51010;
+    /* rojo oscuro, poderoso */
+    --ember-shadow: #a31111;
+    /* rojo profundo, con misterio */
+    --blood-oath: #861616;
+    /* rojo vino intenso */
+    --abyss-flame: #4a0505;
+    /* casi negro con reflejo rojizo */
+}
+
+/* NAVBAR */
+.menunav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: var(--crimson-spirit);
+}
+
+.menunavbar {
+    background-color: var(--crimson-spirit);
+    text-align: center;
+}
+
+.menunavbar .navbar-brand {
+    color: var(--flame-whisper);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: sans-serif;
+    margin-right: 75px;
+}
+
+.menunavbar .navbar-nav {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    gap: 75px;
+}
+
+.menunavbar .nav-link {
+    color: var(--flame-whisper);
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+.menunavbar .nav-link:hover {
+    color: var(--flame-whisper);
+    background-color: var(--inferno-heart);
+}
+
+.navbar-toggler {
+    border-color: var(--flame-whisper);
+}
+
+.imagenLogo {
+    height: 80px;
+}
+
+.navbar-nav .nav-link {
+    display: inline-block;
+    position: relative;
+    color: var(--flame-whisper);
+    padding-bottom: 5px;
+}
+
+.navbar-nav .nav-link::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: var(--flame-whisper);
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform 0.5s ease;
+    bottom: 0;
+    left: 0;
+    transform-origin: left;
+}
+
+.navbar-nav .nav-link:hover::before {
+    transform: scaleX(1);
+}
+
+/* CUERPO */
+.cuerpo {
+    height: 300px;
+}
+
+/* FOOTER */
+.footer {
+    background-color: var(--blood-oath);
+    margin: 0;
+}
+
+.footer h2,
+.footer p,
+.footer div {
+    margin: 0;
+    padding: 0;
+}
+
+.footer h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--blush-flare);
+    font-family: 'Lobster', cursive;
+    margin-bottom: 10px;
+}
+
+.footer p {
+    font-size: 1rem;
+    color: var(--flame-whisper);
+    font-family: 'Montserrat', sans-serif;
+}
+
+.arribaFooter {
+    display: flex;
+    justify-content: center;
+    height: 250px;
+    padding: 30px !important;
+}
+
+.contenedorFooter {
+    display: flex;
+    margin-left: 30px !important;
+    margin-right: 30px !important;
+}
+
+.contenedorFooter>.izquierda {
+    width: 33.3%;
+    text-align: center;
+}
+
+.contenedorFooter>.medio {
+    width: 33.3%;
+    text-align: center;
+}
+
+.contenedorFooter>.derecha {
+    width: 33.3%;
+    text-align: center;
+}
+
+.footer .lineaFooter {
+    width: 100%;
+    height: 1.4px;
+    background-color: var(--abyss-flame);
+    margin: 10px 0;
+}
+
+.footer .pieFooter{
+    display: flex;
+}
+
+.pieFooter > .izquierda{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    color: var(--flame-whisper);
+    text-align: center;
+    padding: 10px 0;
+    width: 50%;
+}
+
+.pieFooter > .derecha{
+    width: 50%;
+    text-align: center;
+    padding: 10px 0;
+}
+
+
+.pieFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    border-top: 1px solid var(--abyss-flame);
+    margin-top: 30px !important;
+}
+
+.pieFooter .derecha a {
+    color: var(--flame-whisper);
+    font-size: 1.5rem;
+    margin-left: 15px;
+    transition: color 0.3s ease, transform 0.3s ease;
+    text-decoration: none;
+}
+
+.pieFooter .derecha a:first-child {
+    margin-left: 0;
+}
+
+.pieFooter .derecha a:hover {
+    color: var(--blush-flare);
+    transform: scale(1.2);
+}
