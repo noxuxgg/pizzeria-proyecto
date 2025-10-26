@@ -267,8 +267,7 @@ body {
     height: 200px;
     background: linear-gradient(179deg,
             rgba(85, 107, 89, 0) 0%,
-            rgba(85, 107, 89, 1) 100%
-        );
+            rgba(85, 107, 89, 1) 100%);
     pointer-events: none;
 }
 
@@ -336,4 +335,67 @@ body {
 .scroll-item.visible {
     opacity: 1;
     transform: translateY(0);
+}
+
+@media (max-width: 576px) {
+    .contenedorFooter {
+        flex-direction: column;
+    }
+
+    .contenedorFooter>.izquierda {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedorFooter>.medio {
+        width: 100%;
+        text-align: center;
+    }
+
+    .contenedorFooter>.derecha {
+        width: 100%;
+        text-align: center;
+    }
+
+    .pieFooter>.izquierda {
+        text-align: center;
+        padding: 10px 0;
+        width: 100%;
+    }
+
+    .pieFooter>.derecha {
+        width: 100%;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+
+    .pieFooter {
+        flex-direction: column;
+    }
+
+    .hero-video {
+        margin-top: 106px;
+    }
+
+    /*.menunavbar{
+        background-color: var(--crimson-spirit);
+    }*/
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+        color: var(--hero-h1-color);
+        margin-bottom: 15px;
+    }
+
+    .hero-content h2 {
+        font-size: 1.5rem;
+        color: var(--hero-h2-color);
+        margin-bottom: 12px;
+    }
+
+    .hero-content h3 {
+        font-size: 1rem;
+        color: var(--hero-h3-color);
+    }
 }
